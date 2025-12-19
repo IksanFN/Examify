@@ -18,9 +18,9 @@ return new class extends Migration
             $table->foreignUuid('classroom_id')->constrained('classrooms')->cascadeOnDelete();
             $table->integer('duration')->default(60);
             $table->text('description')->nullable();
-            $table->enum('random_questions', ['yes', 'no'])->default('yes');
-            $table->enum('radom_answers', ['yes', 'no'])->default('yes');
-            $table->enum('show_answers', ['yes', 'no'])->default('no');
+            $table->enum('random_questions', ['Y', 'N'])->default('Y');
+            $table->enum('radom_answers', ['Y', 'N'])->default('Y');
+            $table->enum('show_answers', ['Y', 'N'])->default('N');
             $table->timestamps();
         });
     }

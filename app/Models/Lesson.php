@@ -10,6 +10,6 @@ class Lesson extends Model
     use UUID;
 
     protected $fillable = [
-        'title',    
+        'name',    
     ];
 }

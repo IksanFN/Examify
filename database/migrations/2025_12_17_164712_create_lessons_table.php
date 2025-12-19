@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('lessons', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->string('title');
+            $table->string('name');
             $table->string('slug')->unique()->index();
             $table->timestamps();
         });
